@@ -10,4 +10,4 @@ app.use(express.json());
 
 app.use("/api/suggest", suggestRouter);
 
-module.exports = app;
+export default app;
