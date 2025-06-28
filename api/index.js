@@ -1,2 +1,2 @@
-const app = require('../server'); // Adjust if your file is in another location
-module.exports = app;
+import app from '../server.js'; // Add `.js` to path for ES Modules
+export default app;
