@@ -42,7 +42,7 @@ https://server-movierecom-cinehook.vercel.app/api/suggest
 │   └── suggest.js       # Express server handling /api/suggest route
 ├── package.json       # Project dependencies and scripts
 ├── package.-lockjson  
-├── pserver.js     #
+├── server.js     
 └── vercel.json         # vercel deployment configuration
 ```
 
@@ -102,7 +102,7 @@ Integrate the API into your React application with a simple `fetch` request:
 const res = await fetch("https://server-movierecom-cinehook.vercel.app/api/suggest", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ title: movie.title }),
+  body: JSON.stringify({ title: movie.title }), //movie should be defined here
 });
 const data = await res.json();
 ```
